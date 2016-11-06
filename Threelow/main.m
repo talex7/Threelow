@@ -7,11 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Dice.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        Dice *dieOne = [Dice new];
+        Dice *dieTwo = [Dice new];
+        Dice *dieThree = [Dice new];
+        Dice *dieFour = [Dice new];
+        Dice *dieFive = [Dice new];
+        
+        [dieOne rollDie];
+        [dieTwo rollDie];
+        [dieThree rollDie];
+        [dieFour rollDie];
+        [dieFive rollDie];
+        
+        NSLog(@"%d", dieOne.side);
+        NSLog(@"%d", dieTwo.side);
+        NSLog(@"%d", dieThree.side);
+        NSLog(@"%d", dieFour.side);
+        NSLog(@"%d", dieFive.side);
+        
     }
     return 0;
 }
