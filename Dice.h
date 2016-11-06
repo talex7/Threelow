@@ -10,7 +10,7 @@
 
 @interface Dice : NSObject
 
-@property int side;
+@property NSString *side;
 
 -(void)rollDie;
 

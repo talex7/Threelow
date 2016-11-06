@@ -12,7 +12,30 @@
 
 -(void)rollDie {
     
-    self.side = arc4random_uniform(6) + 1;
+    int roll = arc4random_uniform(6) + 1;
+    
+    switch (roll)
+    {
+        case 1:
+            self.side = @"\u2680";
+            break;
+        case 2:
+            self.side = @"\u2681";
+            break;
+        case 3:
+            self.side = @"\u2682";
+            break;
+        case 4:
+            self.side = @"\u2683";
+            break;
+        case 5:
+            self.side = @"\u2684";
+            break;
+        case 6:
+            self.side = @"\u2685";
+            break;
+    }
+    
 }
 
 @end

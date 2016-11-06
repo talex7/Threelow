@@ -31,11 +31,11 @@ int main(int argc, const char * argv[]) {
                 [dieFour rollDie];
                 [dieFive rollDie];
                 
-                NSLog(@"%d", dieOne.side);
-                NSLog(@"%d", dieTwo.side);
-                NSLog(@"%d", dieThree.side);
-                NSLog(@"%d", dieFour.side);
-                NSLog(@"%d", dieFive.side);
+                NSLog(@"%@", dieOne.side);
+                NSLog(@"%@", dieTwo.side);
+                NSLog(@"%@", dieThree.side);
+                NSLog(@"%@", dieFour.side);
+                NSLog(@"%@", dieFive.side);
                 
             }
             
