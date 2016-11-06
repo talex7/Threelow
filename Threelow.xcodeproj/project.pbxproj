@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		74024CC11DCABB3100E88B24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024CC01DCABB3100E88B24 /* main.m */; };
 		74024CEE1DCFC54900E88B24 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024CED1DCFC54900E88B24 /* Dice.m */; };
+		74024CF11DCFCB7300E88B24 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024CF01DCFCB7300E88B24 /* InputCollector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		74024CC01DCABB3100E88B24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74024CEC1DCFC54900E88B24 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dice.h; path = ../Dice.h; sourceTree = "<group>"; };
 		74024CED1DCFC54900E88B24 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dice.m; path = ../Dice.m; sourceTree = "<group>"; };
+		74024CEF1DCFCB7300E88B24 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
+		74024CF01DCFCB7300E88B24 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +63,11 @@
 		74024CBF1DCABB3100E88B24 /* Threelow */ = {
 			isa = PBXGroup;
 			children = (
+				74024CC01DCABB3100E88B24 /* main.m */,
 				74024CEC1DCFC54900E88B24 /* Dice.h */,
 				74024CED1DCFC54900E88B24 /* Dice.m */,
-				74024CC01DCABB3100E88B24 /* main.m */,
+				74024CEF1DCFCB7300E88B24 /* InputCollector.h */,
+				74024CF01DCFCB7300E88B24 /* InputCollector.m */,
 			);
 			path = Threelow;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74024CF11DCFCB7300E88B24 /* InputCollector.m in Sources */,
 				74024CEE1DCFC54900E88B24 /* Dice.m in Sources */,
 				74024CC11DCABB3100E88B24 /* main.m in Sources */,
 			);

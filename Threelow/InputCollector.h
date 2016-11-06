@@ -1,18 +1,15 @@
 //
-//  Dice.m
+//  InputCollector.h
 //  Threelow
 //
 //  Created by Thomas Alexanian on 2016-11-06.
 //  Copyright © 2016 Thomas Alexanian. All rights reserved.
 //
 
-#import "Dice.h"
+#import <Foundation/Foundation.h>
 
-@implementation Dice
+@interface InputCollector : NSObject
 
--(void)rollDie {
-    
-    self.side = arc4random_uniform(6) + 1;
-}
+-(NSString *)inputFromUser;
 
 @end

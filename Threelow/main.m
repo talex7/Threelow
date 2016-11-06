@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Dice.h"
+#import "InputCollector.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -17,18 +18,28 @@ int main(int argc, const char * argv[]) {
         Dice *dieThree = [Dice new];
         Dice *dieFour = [Dice new];
         Dice *dieFive = [Dice new];
+        InputCollector *inputCollector = [InputCollector new];
         
-        [dieOne rollDie];
-        [dieTwo rollDie];
-        [dieThree rollDie];
-        [dieFour rollDie];
-        [dieFive rollDie];
-        
-        NSLog(@"%d", dieOne.side);
-        NSLog(@"%d", dieTwo.side);
-        NSLog(@"%d", dieThree.side);
-        NSLog(@"%d", dieFour.side);
-        NSLog(@"%d", dieFive.side);
+        while (1) {
+            
+            NSString *userInput = [inputCollector inputFromUser];
+            
+            if ([userInput isEqual: @"roll"]) {
+                [dieOne rollDie];
+                [dieTwo rollDie];
+                [dieThree rollDie];
+                [dieFour rollDie];
+                [dieFive rollDie];
+                
+                NSLog(@"%d", dieOne.side);
+                NSLog(@"%d", dieTwo.side);
+                NSLog(@"%d", dieThree.side);
+                NSLog(@"%d", dieFour.side);
+                NSLog(@"%d", dieFive.side);
+                
+            }
+            
+        }
         
     }
     return 0;
